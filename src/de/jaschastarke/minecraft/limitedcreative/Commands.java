@@ -75,7 +75,7 @@ public class Commands {
                             case R:
                             case REGION:
                                 args = Arrays.copyOfRange(args, 1, args.length);
-                                plugin.getCommand("/region").execute(sender, "/region", args);
+                                plugin.getCommand("/lcr").execute(sender, "/lcr", args);
                                 return true;
                             case RELOAD:
                                 //plugin.getServer().getPluginManager().disablePlugin(plugin); // disable removes classloader, so re-enabling causes problems
@@ -192,7 +192,7 @@ public class Commands {
         plugin = pplugin;
         plugin.getCommand("limitedcreative").setExecutor(new MainCommandExecutor());
         if (plugin.worldguard == null) {
-            plugin.getCommand("/region").setExecutor(new NotAvailableCommandExecutor());
+            plugin.getCommand("/lcr").setExecutor(new NotAvailableCommandExecutor());
         }
     }
     private static boolean hasPermission(CommandSender sender, IPermission permission) {

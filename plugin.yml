@@ -8,7 +8,7 @@ commands:
         description: "LimitedCreative: GameMode-Switch, Creative-Regions, Config"
         aliases: lc
         usage: /<command> - displays LimitedCreative-Help
-    /region:
+    /lcr:
         description: "LimitedCreative-Region-Command: configure creative regions"
         aliases: lcregion
         usage: /<command> info|flag [<world>#]<region> - set/get region options
